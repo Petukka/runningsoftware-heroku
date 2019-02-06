@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TeamStoraEnso</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Omat tiedot</a></li>
+        <li><a href="#!">Vaihda salasana</a></li>
+        <li><a href="#!">Hallitse</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Kirjaudu ulos</a></li>
+    </ul>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img style="height:64px;" src="css/assets/logo.svg" alt=""></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="#">Nykyinen lista</a></li>
+                <li><a href="#">Vanhat listat</a></li>
+                <li><a href="#">Luo uusi lista</a></li>
+                <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Simo Takala<i class="material-icons left">account_circle</i></a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li class="active"><a href="#">Nykyinen lista</a></li>
+                <li><a href="#">Vanhat listat</a></li>
+                <li><a href="#">Luo uusi lista</a></li>
+                <li><a class="subheader">Simo Takala<i class="material-icons right">account_circle</i></a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#!">Omat tiedot</a></li>
+                <li><a href="#!">Vaihda salasana</a></li>
+                <li><a href="#!">Kirjaudu ulos</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <header class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                <div class="card-image">
+                    <img src="css/assets/bg.jpg">
+                    <a class="btn-floating halfway-fab waves-effect waves-light yellow accent-4"><i class="material-icons">refresh</i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Nykyinen lista</span>
+                    <p>Lista ID: 20190206</p>
+                    <p></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Haluatko varmasti poistaa viestin!</h4>
+            <p>Viesti poistetaan tietokannasta eikä sitä näin ollen voi enää poistamisen jälkeen palauttaa. Tällöin se ei ole myöskään saatavilla vanhojen listojen historiasta.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Peruuta</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Kyllä, poista viesti</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="section">
+                <ul class="collapsible expandable popout">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">lock_outline</i>Lukittava<span class="new badge grey lighten-2 black-text" data-badge-caption="laitetta">3</span></div>
+                        <div class="collapsible-body">
+                            <table class="responsive-table centered">
+                                <thead>
+                                <tr>
+                                    <th>Työn numero</th>
+                                    <th>Koneen osa</th>
+                                    <th>Toimintopaikan nimi</th>
+                                    <th>Toimintopaikka</th>
+                                    <th>Lukitsemisaika&nbsp;<span><i class="tiny material-icons">keyboard_arrow_up</i></span></th>
+                                    <th>Turvakytkin lukkoon</th>
+                                    <th>Käsiventtiilit kiinni</th>
+                                    <th>Sulakkeet pois</th>
+                                    <th>Venttiilit pakko-ohjattu</th>
+                                    <th>Lukittu</th>
+                                    <th>Testattu</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="centered">
+                                    <td>1</td>
+                                    <td>VOITELUT MP</td>
+                                    <td>KA2 MÄRÄNPÄÄN HYDRAULIIKKA</td>
+                                    <td>KP-538-567A</td>
+                                    <td>7:00</td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><a class="btn-floating waves-effect btn-small waves-light yellow accent-4"><i class="material-icons">lock</i></a></td>
+                                    <td class="tooltipped" data-position="right" data-tooltip="Laite tullee lukita ennen testaamista."><a class="btn-floating waves-effect waves-light disabled"><i class="material-icons">done</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>VOITELUT MP</td>
+                                    <td>KA2 MÄRÄNPÄÄN HYDRAULIIKKA</td>
+                                    <td>KP-538-567B</td>
+                                    <td>7:00</td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td>SMa</td>
+                                    <td><a class="btn-floating waves-effect waves-light yellow accent-4"><i class="material-icons">done</i></td>
+                                </tr>
+                                <tr>
+                                    <td>1, 5, 9</td>
+                                    <td>KP HÖYRY</td>
+                                    <td>6-, 5- ja 10-bar PÄÄSULKUVENTTIILIT, SEKÄ OHITUSVENTTIILIT</td>
+                                    <td></td>
+                                    <td>6:30</td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td>HPu</td>
+                                    <td><a class="btn-floating waves-effect waves-light yellow accent-4"><i class="material-icons">done</i></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">lock</i>Lukittu<span class="new badge grey lighten-2 black-text" data-badge-caption="laitetta">2</span></div>
+                        <div class="collapsible-body">
+                            <table class="responsive-table centered">
+                                <thead>
+                                <tr>
+                                    <th>Työn numero</th>
+                                    <th>Koneen osa</th>
+                                    <th>Toimintopaikan nimi</th>
+                                    <th>Toimintopaikka</th>
+                                    <th>Lukitsemisaika (syöttöaika)</th>
+                                    <th>Lukon numero</th>
+                                    <th>Turvakytkin lukkoon</th>
+                                    <th>Käsiventtiilit kiinni</th>
+                                    <th>Sulakkeet pois</th>
+                                    <th>Venttiilit pakko-ohjattu</th>
+                                    <th>Lukittu</th>
+                                    <th>Testattu</th>
+                                    <th>Purettava</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="centered">
+                                    <td>1</td>
+                                    <td>VOITELUT MP</td>
+                                    <td>KA2 MÄRÄNPÄÄN HYDRAULIIKKA</td>
+                                    <td>KP-538-567A</td>
+                                    <td>5:57</td>
+                                    <td>1</td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td>SMa</td>
+                                    <td>SMa</td>
+                                    <td><a class="btn-floating waves-effect waves-light yellow accent-4"><i class="material-icons">done</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>VOITELUT MP</td>
+                                    <td>6-, 5- ja 10-bar PÄÄSULKUVENTTIILIT, SEKÄ OHITUSVENTTIILIT</td>
+                                    <td>KP-538-567B</td>
+                                    <td class="red-text">6:02</td>
+                                    <td>15</td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td>HPu</td>
+                                    <td>HPu</td>
+                                    <td><a class="btn-floating waves-effect waves-light yellow accent-4"><i class="material-icons">done</i></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">lock_open</i>Purettava<span class="new badge grey lighten-2 black-text" data-badge-caption="laite">1</span></div>
+                        <div class="collapsible-body">
+                            <table class="responsive-table centered">
+                                <thead>
+                                <tr>
+                                    <th>Työn numero</th>
+                                    <th>Koneen osa</th>
+                                    <th>Toimintopaikan nimi</th>
+                                    <th>Toimintopaikka</th>
+                                    <th>Lukon numero</th>
+                                    <th>Turvakytkin lukkoon</th>
+                                    <th>Käsiventtiilit kiinni</th>
+                                    <th>Sulakkeet pois</th>
+                                    <th>Venttiilit pakko-ohjattu</th>
+                                    <th>Lukittu</th>
+                                    <th>Testattu</th>
+                                    <th>Purettu</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="centered">
+                                    <td>1</td>
+                                    <td>VOITELUT MP</td>
+                                    <td>KA2 MÄRÄNPÄÄN HYDRAULIIKKA</td>
+                                    <td>KP-538-567A</td>
+                                    <td>1</td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td>HPu</td>
+                                    <td>HPu</td>
+                                    <td><a class="btn-floating waves-effect waves-light yellow accent-4"><i class="material-icons">done</i></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons"><img src="css/assets/lock_open_fill.png" style="height:24px;"></i>Purettu<span class="new badge grey lighten-2 black-text" data-badge-caption="laitetta">2</span></div>
+                        <div class="collapsible-body">
+                            <table class="responsive-table centered">
+                                <thead>
+                                <tr>
+                                    <th>Työn numero</th>
+                                    <th>Koneen osa</th>
+                                    <th>Toimintopaikan nimi</th>
+                                    <th>Toimintopaikka</th>
+                                    <th>Lukon numero</th>
+                                    <th>Turvakytkin lukkoon</th>
+                                    <th>Käsiventtiilit kiinni</th>
+                                    <th>Sulakkeet pois</th>
+                                    <th>Venttiilit pakko-ohjattu</th>
+                                    <th>Lukittu</th>
+                                    <th>Testattu</th>
+                                    <th>Palautettu</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="centered">
+                                    <td>1</td>
+                                    <td>VOITELUT MP</td>
+                                    <td>KA2 MÄRÄNPÄÄN HYDRAULIIKKA</td>
+                                    <td>KP-538-567A</td>
+                                    <td>1</td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td>SMa</td>
+                                    <td>SMa</td>
+                                    <td><a class="btn-floating waves-effect waves-light yellow accent-4"><i class="material-icons">done</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>VOITELUT MP</td>
+                                    <td>KA2 MÄRÄNPÄÄN HYDRAULIIKKA</td>
+                                    <td>KP-538-567B</td>
+                                    <td>15</td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td><p><label><input type="checkbox" /><span></span></label></p></td>
+                                    <td>HPu</td>
+                                    <td>HPu</td>
+                                    <td><a class="btn-floating waves-effect waves-light yellow accent-4"><i class="material-icons">done</i></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <h5>Kommentit</h5>
+                <div class="row">
+                    <form class="col xl8 s12 offset-xl2">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="textarea1" class="materialize-textarea" data-length="240"></textarea>
+                                <label for="textarea1">Kirjoita...</label>
+                                <a style="margin-left:45px;"class="waves-effect waves-light btn yellow accent-4 black-text">Lähetä</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col xl8 s12 offset-xl2">
+                        <div class="card-panel grey lighten-5 z-depth-1">
+                            <div class="row">
+                                <div class="col s6">
+                                        <span>Simo Takala<i class="material-icons left">account_circle</i></span>
+                                </div>
+                                <div class="col s5 right-align">
+                                        <span>06.02.2019 @ 13:04</span>
+                                </div>
+                                <div class="col s1 right-align">
+                                        <a class="btn-floating btn-small waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">delete_forever</i></a>
+                                </div>
+                            </div>
+                            <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate faucibus risus. Sed semper, neque elementum consectetur gravida, turpis justo rhoncus odio, non ultricies nibh purus id nisi. Nullam egestas, nunc vitae interdum pulvinar, felis augue placerat metus, eget malesuada enim nisi nec nunc.</span>
+                        </div>
+                    </div>
+                    <div class="col xl8 s12 offset-xl2">
+                        <div class="card-panel grey lighten-5 z-depth-1">
+                            <div class="row">
+                                <div class="col s6">
+                                        <span>Jouni Mäkiranta<i class="material-icons left">account_circle</i></span>
+                                </div>
+                                <div class="col s5 right-align">
+                                        <span>06.02.2019 @ 12:43</span>
+                                </div>
+                                <div class="col s1 right-align tooltipped" data-position="right" data-tooltip="Vain omia kommentteja voi poistaa.">
+                                        <a class="btn-floating btn-small waves-effect waves-light red disabled"><i class="material-icons">delete_forever</i></a>
+                                </div>
+                            </div>
+                            <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate faucibus risus.</span>
+                        </div>
+                    </div>
+                    <div class="col xl8 s12 offset-xl2">
+                        <div class="card-panel grey lighten-5 z-depth-1">
+                            <div class="row">
+                                <div class="col s6">
+                                        <span>Konsta Ala-Ilomäki<i class="material-icons left">account_circle</i></span>
+                                </div>
+                                <div class="col s5 right-align">
+                                        <span>06.02.2019 @ 12:34</span>
+                                </div>
+                                <div class="col s1 right-align tooltipped" data-position="right" data-tooltip="Vain omia kommentteja voi poistaa.">
+                                        <a class="btn-floating btn-small waves-effect waves-light red disabled"><i class="material-icons">delete_forever</i></a>
+                                </div>
+                            </div>
+                            <span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate massa est, eget vulputate mi blandit sit amet. Aenean facilisis, nisi vitae fermentum iaculis, ex lectus feugiat nulla, vel sodales ipsum purus quis turpis. Vivamus scelerisque diam quis venenatis sagittis. Nullam viverra lorem a enim laoreet vulputate. Donec consectetur massa sed vehicula tempor.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer yellow accent-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Company Bio</h5>
+                    <p class="grey-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate faucibus risus.</p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="black-text">Settings</h5>
+                    <ul>
+                        <li><a class="black-text" href="#!">Link 1</a></li>
+                        <li><a class="black-text" href="#!">Link 2</a></li>
+                        <li><a class="black-text" href="#!">Link 3</a></li>
+                        <li><a class="black-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="black-text">Connect</h5>
+                    <ul>
+                        <li><a class="black-text" href="#!">Link 1</a></li>
+                        <li><a class="black-text" href="#!">Link 2</a></li>
+                        <li><a class="black-text" href="#!">Link 3</a></li>
+                        <li><a class="black-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">TeamStoraEnso</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
